@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+}
+
+.home_page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header {
+    width: 100%;
+    height: 556px;
+    background-image: url('./images/10-2.png'), linear-gradient(to bottom, #3951E3, #0EA8C7);
+    background-repeat: no-repeat;
+    background-position: 100%, -2px;
+    color: white;
+}
+
+.header_container {
+    width: 100%;
+    height: 94px;
+}
+
+.header_container > .logo {
+    background: url(./images/Logo.png) no-repeat 50% 50%;
+    height: 100%;
+    width: 300px;
+    vertical-align: middle;
+    margin-left: 61px;
+    display: inline-block;
+}
+
+.header_container > .list {
+    float: right;
+    margin-right: 36px;
+}
+
+.header_container > .list li {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: MullerRegular;
+}
+
+.header_container > .list a {
+    margin-left: 32px;
+}
+
+.header_container > .list ul {
+    margin-top: 38px;
+}
+
+.header > .header_text {
+    position: absolute;
+    left: 51px;
+    top: 148px;
+    width: 385px;
+    height: 284px;
+}
+
+.header > .header_text > span {
+    font-size: 48px;
+    font-family: MullerBold;
+    width: 357px;
+    height: 54px;
+}
+
+.header > .header_text > p {
+    line-height: 29px;
+    font-size: 18px;
+    width: 383px;
+    height: 216px;
+    margin-top: 14px;
+    font-family: MullerLight;
+}
+
+.programs {
+    height: 490px;
+    margin: 59px 43px 0 45px;
+}
+
+.programs > .programs_text {
+    text-align: center;
+}
+
+.programs > .programs_text span {
+    font-size: 48px;
+    font-family: MullerBold;
+    color: #000D8C;
+}
+
+.programs_grid {
+    height: 388px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "item-1 item-1 item-1"
+    "item-2 item-3 item-4";
+    margin-top: 48px;
+    grid-gap: 32px;
+    color: white;
+}
+
+.programs_grid > .box_1 {
+    grid-area: item-1;
+    background: #0EA8C7 url('./images/pattern1.png') no-repeat;
+}
+
+.programs_grid > .box_2 {
+    grid-area: item-2;
+}
+
+.programs_grid > .box_3 {
+    grid-area: item-3;
+}
+
+.programs_grid > .box_4 {
+    grid-area: item-4;
+}
+
+.programs_grid > .box_1 span {
+    font-size: 24px;
+    font-family: MullerBold;
+}
+
+.programs_grid > .box_1 p {
+    font-size: 18px;
+}
