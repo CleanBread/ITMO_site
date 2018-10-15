@@ -78,48 +78,99 @@ body {
 }
 
 .programs {
-    height: 490px;
     margin: 59px 43px 0 45px;
 }
 
-.programs > .programs_text {
+.programs_text {
     text-align: center;
 }
 
-.programs > .programs_text span {
+.programs_text span {
     font-size: 48px;
     font-family: MullerBold;
     color: #000D8C;
 }
 
 .programs_grid {
-    height: 388px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 386px 386px 386px 1fr;
+    grid-auto-columns: 1fr minmax(386px, auto) 1fr;
     grid-template-areas: 
-    "item-1 item-1 item-1"
-    "item-2 item-3 item-4";
+    ". item-1 item-1 item-1 ."
+    ". item-2 item-3 item-4 .";
     margin-top: 48px;
-    grid-gap: 32px;
+    grid-gap: 30px;
     color: white;
 }
 
 .programs_grid > .box_1 {
     grid-area: item-1;
     background: #0EA8C7 url('./images/pattern1.png') no-repeat;
+    height: 178px;
+}
+
+.programs_grid > .box_1 > .span {
+    margin: auto 103px auto 113px;
+}
+.programs_grid > .box_1 > .span span {
+    font-family: MullerBlack;
+    font-weight: 800;
+}
+
+
+.programs_grid > .box_1  .sentence {
+    width: 526px;
+    height: 125px;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 32px 93px 21px 0;
+}
+
+.programs_grid > .box_1  .sentence p {
+    margin: 0;
+    font-family: MullerLight;
+}
+
+.programs_grid > .box_1  .btn {
+    margin: 74px 55px 64px 0;
+}
+
+.programs_grid > .box_1  button {
+    width: 124px;
+    height: 40px;
+    border: none;
+    background: #FF8400;
+    color: white;
+    font-size: 16px;
 }
 
 .programs_grid > .box_2 {
     grid-area: item-2;
+    background: #FF8400 url('./images/pattern2.png') no-repeat 50% 50%;
+    text-align: center;
+    height: 178px;
+}
+
+.programs_grid .span_in_box {
+    font-size: 24px;
+    font-family: MullerBlack;
+    margin: auto;
+    line-height: 40px;
 }
 
 .programs_grid > .box_3 {
     grid-area: item-3;
+    background: #3951E3 url('./images/pattern3.png') no-repeat 50% 50%;
+    text-align: center;
+    height: 178px;
 }
 
 .programs_grid > .box_4 {
     grid-area: item-4;
+    background: #000D8C url('./images/pattern4.png') no-repeat 50% 50%;
+    text-align: center;
+    height: 178px;
 }
 
 .programs_grid > .box_1 span {
@@ -129,4 +180,80 @@ body {
 
 .programs_grid > .box_1 p {
     font-size: 18px;
+}
+
+.programs_grid > .box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.graduates {
+    margin-top: 81px;
+}
+
+.graduate {
+    margin: 52px 221px 77px 220px;
+    height: 308px;
+    box-shadow: 0px 0px 30px 3px #E5E5E5;
+    position: relative;
+}
+
+.graduate::before {
+    content: "";
+    position: absolute;
+    left: -75px;
+    top: 126px;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #000D8C;
+    border-bottom: 15px solid transparent;
+}
+
+.graduate::after {
+    content: "";
+    position: absolute;
+    right: -75px;
+    top: 126px;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #000D8C;
+    border-bottom: 15px solid transparent;
+}
+
+.graduate .photo {
+    background: url("./images/men.png") 50% 15%;
+    height: 176px;
+    width: 176px;
+    border-radius: 50%;
+    margin-right: 32px;
+}
+
+.graduate .person {
+    display: flex;
+    height: 195px;
+    align-items: center;
+    position: absolute;
+    left: 61px;
+    top: 52px;
+}
+
+.graduate .information {
+    width: 525px;
+}
+
+.graduate .btn-person {
+    width: 124px;
+    height: 40px;
+    border: none;
+    background: #FF8400;
+    color: white;
+    font-size: 16px;
+}
+
+.graduate .name {
+    font-size: 24px;
+    font-family: MullerBold;
+}
+
+.graduate .say {
+    font-size: 16px;
+    font-weight: 550;
 }
