@@ -81,11 +81,11 @@ body {
     margin: 59px 43px 0 45px;
 }
 
-.programs_text {
+.programs-text {
     text-align: center;
 }
 
-.programs_text span {
+.programs-text span {
     font-size: 48px;
     font-family: MullerBold;
     color: #000D8C;
@@ -132,17 +132,8 @@ body {
     font-family: MullerLight;
 }
 
-.programs_grid > .box_1  .btn {
+.programs_grid > .box_1 > .btn-box {
     margin: 74px 55px 64px 0;
-}
-
-.programs_grid > .box_1  button {
-    width: 124px;
-    height: 40px;
-    border: none;
-    background: #FF8400;
-    color: white;
-    font-size: 16px;
 }
 
 .programs_grid > .box_2 {
@@ -189,6 +180,8 @@ body {
 
 .graduates {
     margin-top: 81px;
+    display: flex;
+    flex-direction: column;
 }
 
 .graduate {
@@ -196,6 +189,7 @@ body {
     height: 308px;
     box-shadow: 0px 0px 30px 3px #E5E5E5;
     position: relative;
+    display: flex;
 }
 
 .graduate::before {
@@ -233,13 +227,16 @@ body {
     position: absolute;
     left: 61px;
     top: 52px;
+    margin: auto;
 }
 
 .graduate .information {
     width: 525px;
+    display: flex;
+    flex-direction: column;
 }
 
-.graduate .btn-person {
+.btn {
     width: 124px;
     height: 40px;
     border: none;
@@ -256,4 +253,68 @@ body {
 .graduate .say {
     font-size: 16px;
     font-weight: 550;
+}
+
+.tell-story-box {
+    background: #3951E3;
+    height: 317px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.tell-story-box .head-line {
+    width: 418px;
+    height: 100%;
+    display: flex;
+    margin: 0px 73px 0px 143px;
+}
+
+.tell-story-box .head-line p {
+    font-size: 48px;
+    font-family: MullerBold;
+    margin: auto;
+}
+
+.tell-story-box .sentence {
+    margin-bottom: 21px;
+}
+
+.tell-story-box .sentence p {
+    margin: auto;
+    font-size: 18px;
+    line-height: 145%;
+}
+
+.tell-story-box .tell-story {
+    width: 557px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tell-story .story-btn {
+    width: 175px;
+}
+
+.career-center-box {
+    height: 469px;
+    background-color: #E1E9FD;
+    background-image: linear-gradient(90deg, #E7EDFD 50.06%, rgba(231, 237, 253, 0) 85%), url('./images/main-build.png');
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.career-center-box .career-center {
+    height: 284px;
+    width: 520px;
+    margin-top: 101px;
+    margin-left: 149px;
+}
+
+.career-center .text {
+    font-size: 48px;
+    font-family: MullerBold;
+    color: #000D8C;
 }
