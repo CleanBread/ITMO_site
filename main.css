@@ -318,3 +318,47 @@ body {
     font-family: MullerBold;
     color: #000D8C;
 }
+
+.career-center .sentence {
+    margin-top: 24px;
+    font-family: MullerLight;
+}
+
+.career-center .sentence .mini-sentence {
+    margin: 0px 0px 10px 0px;
+}
+
+.question-answer {
+    height: 452px;
+}
+
+.question-answer .box {
+    margin: 88px auto auto auto;
+    width: 592px;
+    height: 322px;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-answer .box .text {
+    margin-bottom: 33px;
+}
+
+.question-answer .box .question {
+    background: #EAEFFC;
+    height: 56px;
+    margin-bottom: 8px;
+    position: relative;
+    font-family: MullerBold;
+}
+
+.question-answer .box .question .question-text {
+    margin-left: 26px;
+    margin-top: 20px;
+}
+
+.question .arrow {
+    position: absolute;
+    right: 17px;
+    top: 24px;
+}
