@@ -339,12 +339,12 @@ body {
 
 .question-answer {
     height: 452px;
+    transition: .3s;
 }
 
 .question-answer .box {
     margin: 88px auto auto auto;
     width: 592px;
-    height: 322px;
     display: flex;
     flex-direction: column;
 }
@@ -355,10 +355,10 @@ body {
 
 .question-answer .box .question {
     background: #EAEFFC;
-    height: 56px;
     margin-bottom: 8px;
     position: relative;
     font-family: MullerBold;
+    cursor: pointer;
 }
 
 .question-answer .box .question .question-text {
@@ -370,6 +370,7 @@ body {
     position: absolute;
     right: 17px;
     top: 24px;
+    transition: .3s;
 }
 
 .connection {
@@ -554,4 +555,18 @@ body {
 .rules .right {
     float: right;
     margin-right: 65px;
+}
+
+.hide {
+    display: none;
+}
+
+.answer-box {
+    max-height: 0;
+    transition-duration: .3s;
+    overflow: hidden;
+}
+
+.answer-box .answer-text {
+    margin-left: 40px;
 }
