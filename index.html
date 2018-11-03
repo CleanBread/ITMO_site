@@ -65,25 +65,8 @@
                         
             </div>
             <div class="graduate">
-                <div class="person">
-                    <div class="photo"></div>
-                    <div class="information">
-                        <h3 class="name">Ярослав Павлов</h3>
-                        <p class="say">“Очень здорово, когда ты что-то даешь людям и видишь, что ты можешь повлиять на них в позитивном ключе, помочь им решить их задачи”.</p>
-                        <button class="btn">Подробнее</button>
-                    </div>
-                </div>
+                
             </div>
-            <div class="graduate hide">
-                    <div class="person">
-                        <div class="photo"></div>
-                        <div class="information">
-                            <h3 class="name">Чистяков Глеб</h3>
-                            <p class="say">“Дайте работу, ну пожалуйста”.</p>
-                            <button class="btn">Подробнее</button>
-                        </div>
-                    </div>
-                </div>
             <div class="right-arrow">
                 <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="right-svg">
@@ -239,10 +222,24 @@
             <p class="right">Политика по обработке Персональных данных</p>
         </div>
     </div>
+
+    <template id="personal">
+        <div class="person">
+            <div class="photo"></div>
+            <div class="information">
+                <h3 class="name">Ярослав Павлов</h3>
+                <p class="say">“Очень здорово, когда ты что-то даешь людям и видишь, что ты можешь повлиять на них в позитивном ключе, помочь им решить их задачи”.</p>
+                <button class="btn">Подробнее</button>
+            </div>
+        </div>
+    </template>
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtMQPc1gS4NcgGQ-tsRz2tMgTCgTXEVSM"></script>
     <script src="./js/map.js"></script>
-    <script src="./js/karusel.js"></script>
     <script src="js/show-answer.js"></script>
+    <script src="js/personal/create-personal.js"></script>
+    <script src="js/personal/render-person.js"></script>
+    <script src="js/personal/add-person.js"></script>
+    <script src="./js/karusel.js"></script>
 </body>
 </html>
