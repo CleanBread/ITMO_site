@@ -5,9 +5,9 @@
       animationTime = 300,
       framesCount = 70;
 
-    anchors.forEach(function(item) {
+    anchors.forEach((item) => {
     // каждому якорю присваиваем обработчик события
-        item.addEventListener('click', function(e) {
+        item.addEventListener('click', (e) => {
         // убираем стандартное поведение
             e.preventDefault();
     
@@ -15,7 +15,7 @@
             let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
     
             // запускаем интервал, в котором
-            let scroller = setInterval(function() {
+            let scroller = setInterval(() => {
                 // считаем на сколько скроллить за 1 такт
                 let scrollBy = coordY / framesCount;
       

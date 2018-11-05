@@ -84,7 +84,7 @@
                     <div class="sentence">
                         <p>История университета — это во многом история его выпускников. Нам очень интересно знать, как сложилась ваша жизнь. Рассказывайте о себе, делитесь воспоминаниями о студенческих годах, преподавателях и однокурсниках.</p>
                     </div>
-                <button class="story-btn btn">Рассказать о себе</button>
+                <button class="story-btn btn" id="btn-for-story">Рассказать о себе</button>
                 </div>
         </div>
         <div class="career-center-box">
@@ -222,6 +222,29 @@
             <p class="right">Политика по обработке Персональных данных</p>
         </div>
     </div>
+    <div class="modal-box">
+        <div class="modal-window">
+            <div class="input-box">
+                <form action="" class="modal-form">
+                    <label for="">
+                        ФИО
+                    </label>
+                    <input type="text" class="modal-input">
+                    <label for="">
+                        email
+                    </label>
+                    <input type="email" class="modal-input">
+                    <label for="">
+                        Ваша история
+                    </label>
+                    <!-- <input type="text" > -->
+                    <textarea name="" id="" cols="30" rows="10" class="modal-input story-input"></textarea>
+                    <button class="send btn">Отправить</button>
+                </form>
+                </div>
+            <button class="close-btn" id="close-btn">X</button>
+        </div>
+    </div>
 
     <template id="personal">
         <div class="person">
@@ -234,12 +257,13 @@
         </div>
     </template>
     <script src="js/scroll.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtMQPc1gS4NcgGQ-tsRz2tMgTCgTXEVSM"></script>
-    <script src="./js/map.js"></script>
+    <script src="js/modal-window-for-story.js"></script>
     <script src="js/show-answer.js"></script>
     <script src="js/personal/create-personal.js"></script>
     <script src="js/personal/render-person.js"></script>
     <script src="js/personal/add-person.js"></script>
     <script src="./js/karusel.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtMQPc1gS4NcgGQ-tsRz2tMgTCgTXEVSM"></script>
+    <script src="./js/map.js"></script>
 </body>
 </html>
