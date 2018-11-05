@@ -12,7 +12,6 @@
         }
         for (i = 1; i < 5; i++) {
             fragment.childNodes[i].classList.add('hide');
-            // fragment.childNodes[i].style.display = 'hide';
         }
         personBox.appendChild(fragment);
       };
