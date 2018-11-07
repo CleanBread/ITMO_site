@@ -247,6 +247,7 @@ body {
     width: 525px;
     display: flex;
     flex-direction: column;
+    height: 200px;
 }
 
 .btn {
@@ -268,6 +269,7 @@ body {
 .graduate .say {
     font-size: 16px;
     font-weight: 550;
+    height: 50px;
 }
 
 .tell-story-box {
@@ -618,7 +620,6 @@ body {
 
 .modal-box .modal-window .input-box {
     width: 500px;
-    /* margin: auto; */
     margin-left: 20px;
     padding-top: 50px;
     height: 100%;
@@ -664,7 +665,7 @@ body {
     height: 50px;
     background-color: #FF8400;
     top: 50%;
-    left: 20px;
+    left: 15px;
     border-radius: 50%;
     opacity: 0;
     transition-duration: 0.5s;
@@ -677,6 +678,19 @@ body {
     transform: rotate(180deg);
 }
 
-/* .relative {
+.modal-for-other-buttons .modal-window-for-buttons {
+    background-color: #FF8400;
+    width: 40%;
+    height: 20%;
+    margin: 100px auto;
     position: relative;
-} */
+    color: white;
+}
+.modal-for-other-buttons {
+    background: none;
+}
+
+.modal-for-other-buttons .modal-window-for-buttons .i-am-not-dizainer {
+    text-align: center;
+    padding-top: 20px;
+}

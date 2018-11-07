@@ -18,9 +18,14 @@
     btn.addEventListener('click', onButtonClick);
     closeBtn.addEventListener('click', onCloseBtnClick);
 
-    window.addEventListener('click', (evt) => {
-        if(evt.target == modalBox) {
-            modalBox.classList.remove('show');
-        }
-    })
+    window.ClickNotOnModalWindow = (box) => {
+        window.addEventListener('click', (evt) => {
+            if(evt.target == box) {
+                box.classList.remove('show');
+            }
+        });
+    }
+
+    window.ClickNotOnModalWindow(modalBox);
+    
 })();
