@@ -7,12 +7,12 @@
     var closeBtn = document.querySelector('#close-btn');
 
     var onButtonClick = () => {
-        modalBox.classList.add('display-block');
+        modalBox.classList.add('show');
         // window.onscroll = function () { window.scrollTo(0, 1700); }; // не забыть переделать запред скрола
     }
 
     var onCloseBtnClick = () => {
-        modalBox.classList.remove('display-block');
+        modalBox.classList.remove('show');
     }
 
     btn.addEventListener('click', onButtonClick);
@@ -20,7 +20,7 @@
 
     window.addEventListener('click', (evt) => {
         if(evt.target == modalBox) {
-            modalBox.classList.remove('display-block');
+            modalBox.classList.remove('show');
         }
     })
 })();

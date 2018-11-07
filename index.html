@@ -226,24 +226,28 @@
         <div class="modal-window">
             <div class="input-box">
                 <form action="" class="modal-form">
-                    <label for="">
+                    <label for="name-surname" class="label-in-modal-window">
                         ФИО
                     </label>
-                    <input type="text" class="modal-input">
-                    <label for="">
+                    <input type="text" class="modal-input" id="name-surname">
+                    <label for="email" class="label-in-modal-window">
                         email
                     </label>
-                    <input type="email" class="modal-input">
-                    <label for="">
+                    <input type="email" class="modal-input" id="email">
+                    <label for="story" class="label-in-modal-window">
                         Ваша история
                     </label>
-                    <!-- <input type="text" > -->
-                    <textarea name="" id="" cols="30" rows="10" class="modal-input story-input"></textarea>
+                    <textarea name="" id="story" cols="40" rows="10" class="modal-input story-input"></textarea>
                     <button class="send btn">Отправить</button>
                 </form>
                 </div>
             <button class="close-btn" id="close-btn">X</button>
         </div>
+    </div>
+    <div class="move-to-top">
+            <svg class="arrow-top" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.417 2.17024L11.8405 0.643555L6.70868 5.60256L1.57682 0.643555L0.000366211 2.17024L6.70868 8.66675L13.417 2.17024Z" fill="#000D8C"/>
+            </svg>  
     </div>
 
     <template id="personal">
@@ -257,6 +261,7 @@
         </div>
     </template>
     <script src="js/scroll.js"></script>
+    <script src="js/scroll-top.js"></script>
     <script src="js/modal-window-for-story.js"></script>
     <script src="js/show-answer.js"></script>
     <script src="js/personal/create-personal.js"></script>
