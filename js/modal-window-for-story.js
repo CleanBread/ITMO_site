@@ -7,11 +7,15 @@
     var closeBtn = document.querySelector('#close-btn');
 
     var onButtonClick = () => {
+        window.onwheel = (e) => {
+            e.preventDefault();
+            return false;
+        }
         modalBox.classList.add('show');
-        // window.onscroll = function () { window.scrollTo(0, 1700); }; // не забыть переделать запред скрола
     }
 
     var onCloseBtnClick = () => {
+        window.onwheel = null;
         modalBox.classList.remove('show');
     }
 
@@ -21,6 +25,7 @@
     window.ClickNotOnModalWindow = (box) => {
         window.addEventListener('click', (evt) => {
             if(evt.target == box) {
+                window.onwheel = null;
                 box.classList.remove('show');
             }
         });

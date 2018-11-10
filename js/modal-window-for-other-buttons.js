@@ -18,9 +18,7 @@
 
         setTimeout(hideModal, 2000);
         })
-        // clearTimeout(timeout);
     })
 
-    // window.ClickNotOnModalWindow(modalBox);
 
 })();
