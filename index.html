@@ -225,20 +225,20 @@
     <div class="modal-box">
         <div class="modal-window">
             <div class="input-box">
-                <form action="" class="modal-form">
+                <form action = "https://formspree.io/gleb4ist@gmail.com" method = "POST" class="modal-form">
                     <label for="name-surname" class="label-in-modal-window">
                         ФИО
                     </label>
-                    <input type="text" class="modal-input" id="name-surname">
+                    <input type="text" class="modal-input" id="name-surname" name="name-and-surname">
                     <label for="email" class="label-in-modal-window">
                         email
                     </label>
-                    <input type="email" class="modal-input" id="email">
-                    <label for="story" class="label-in-modal-window">
+                    <input type="email" class="modal-input" id="email" name="email">
+                    <label for="story" class="label-in-modal-window" name="story">
                         Ваша история
                     </label>
                     <textarea name="" id="story" cols="40" rows="10" class="modal-input story-input"></textarea>
-                    <button class="send btn">Отправить</button>
+                    <button type="submit" class="send btn">Отправить</button>
                 </form>
                 </div>
             <button class="close-btn" id="close-btn">X</button>

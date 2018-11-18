@@ -93,7 +93,7 @@ body {
 
 .programs_grid {
     display: grid;
-    grid-template-columns: 1fr 386px 386px 386px 1fr;
+    grid-template-columns: 1fr 10fr 10fr 10fr 1fr;
     grid-auto-columns: 1fr minmax(386px, auto) 1fr;
     grid-template-areas: 
     ". item-1 item-1 item-1 ."
@@ -110,7 +110,7 @@ body {
 }
 
 .programs_grid > .box_1 > .span {
-    margin: auto 103px auto 113px;
+    margin: auto;
 }
 .programs_grid > .box_1 > .span span {
     font-family: MullerBlack;
@@ -119,21 +119,20 @@ body {
 
 
 .programs_grid > .box_1  .sentence {
-    width: 526px;
+    width: 50%;
     height: 125px;
     vertical-align: middle;
     font-size: 18px;
     line-height: 29px;
-    margin: 32px 93px 21px 0;
+    margin: auto;
 }
 
 .programs_grid > .box_1  .sentence p {
-    margin: 0;
     font-family: MullerLight;
 }
 
 .programs_grid > .box_1 > .btn-box {
-    margin: 74px 55px 64px 0;
+    margin: auto;
 }
 
 .programs_grid > .box_2 {
@@ -276,8 +275,7 @@ body {
     background: #3951E3;
     height: 317px;
     color: white;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
 .tell-story-box .head-line {
@@ -309,6 +307,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 70px;
 }
 
 .tell-story .story-btn {
@@ -352,7 +353,7 @@ body {
 
 .question-answer .box {
     margin: 88px auto auto auto;
-    width: 592px;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
